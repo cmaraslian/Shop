@@ -1,5 +1,5 @@
 import 'package:Shop/data/dummy_data.dart';
-import 'package:Shop/models/product.dart';
+import 'package:Shop/providers/product.dart';
 import 'package:flutter/cupertino.dart';
 
 class Products with ChangeNotifier {
