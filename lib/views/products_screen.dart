@@ -23,8 +23,14 @@ class ProdutcsScreen extends StatelessWidget {
       body: Padding(
         padding: EdgeInsets.all(8),
         child: ListView.builder(
-            itemCount: productsData.itemsCount,
-            itemBuilder: (ctx, i) => ProductItem(products[i])),
+          itemCount: productsData.itemsCount,
+          itemBuilder: (ctx, i) => Column(
+            children: <Widget>[
+              ProductItem(products[i]),
+              Divider(),
+            ],
+          ),
+        ),
       ),
     );
   }
